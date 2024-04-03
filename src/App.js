@@ -9,9 +9,14 @@ function App() {
   // const double = numbers.map((item) => item * 2);
   // console.log(double);
   //console.log(YoutubeData);
-
+  const name= " Ngan"
   return (
-    <YoutubeList></YoutubeList>
+    <YoutubeList>
+      {/* Children 
+      prop. children : truyền ở giữa component*/}
+      <h1>rùhefijfwi43</h1>
+      { name}
+    </YoutubeList>
   )
   
 }

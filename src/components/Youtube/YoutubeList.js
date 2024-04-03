@@ -1,11 +1,13 @@
 import { YoutubeData } from "../../YoutubeData"
 import YoutubeItem from "./YoutubeItem"
 
-function YoutubeList() {
+function YoutubeList(props) {
+    
     return (
         <div className='ytb-list'>
 
     {/* Đổ dữ liệu ra */}
+    {props.children}
     {YoutubeData.map((item, index) => (
       // Duyệt ra các phần tử
       //<div key={item.id}>Hello {index+1} </div>
