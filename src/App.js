@@ -19,8 +19,13 @@ function Feature(){
 function App() {
   //const name =" Ngan xink"
   return (
-    <div>
+    <div className='ytb-list'>
 
+    <YoutubeItem src="https://cdn.dribbble.com/users/664697/screenshots/3207635/media/d8b25359a7ea951790187a8d2bf953fd.png?resize=800x600&vertical=center" title="Học lập trình" desc="mô tả cách học lập trình dễ hiểu" author="BTNgan"></YoutubeItem>
+    <YoutubeItem src="https://cdn.dribbble.com/users/664697/screenshots/3207635/media/d8b25359a7ea951790187a8d2bf953fd.png?resize=800x600&vertical=center" title="Học lập trình" desc="mô tả cách học lập trình dễ hiểu" author="BTNgan"></YoutubeItem>
+    <YoutubeItem src="https://cdn.dribbble.com/users/664697/screenshots/3207635/media/d8b25359a7ea951790187a8d2bf953fd.png?resize=800x600&vertical=center" title="Học lập trình" desc="mô tả cách học lập trình dễ hiểu" author="BTNgan"></YoutubeItem>
+    <YoutubeItem src="https://cdn.dribbble.com/users/664697/screenshots/3207635/media/d8b25359a7ea951790187a8d2bf953fd.png?resize=800x600&vertical=center" title="Học lập trình" desc="mô tả cách học lập trình dễ hiểu" author="BTNgan"></YoutubeItem>
+    <YoutubeItem src="https://cdn.dribbble.com/users/664697/screenshots/3207635/media/d8b25359a7ea951790187a8d2bf953fd.png?resize=800x600&vertical=center" title="Học lập trình" desc="mô tả cách học lập trình dễ hiểu" author="BTNgan"></YoutubeItem>
     <YoutubeItem src="https://cdn.dribbble.com/users/664697/screenshots/3207635/media/d8b25359a7ea951790187a8d2bf953fd.png?resize=800x600&vertical=center" title="Học lập trình" desc="mô tả cách học lập trình dễ hiểu" author="BTNgan"></YoutubeItem>
   </div>
   )
