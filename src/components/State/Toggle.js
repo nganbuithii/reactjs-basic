@@ -32,22 +32,26 @@ function Toggle(){
     // off, setOff
     //active, setActive
     
-    
+    const handerToggle = () => {
+        //console.log("clicked");
+        // setOn callback => setOn(prevState) => !prevState
+        setOn((on) => !on);
+    }
 
     //SetOn ở đây là CALLBACK
 
     //RE RENDER:
     return (
         <div>
-            <div className={`toggle   ${on ? "active":""}`}>
+            <div className={`toggle   ${on ? "active":""}`} onClick={handerToggle}>
                 <div className={`spinner ${on? "active":""}`}></div>
             </div>
-            {on ? "on":"off"}
+            {/* {on ? "on":"off"}
             <div className="toggle-control">
                 <div className="toggle-on" onClick={() => {setOn(true)}}>on</div>
                 <hr></hr>
                 <div className="toggle-off" onClick={() => {setOn(false)}}>off</div>
-            </div>
+            </div> */}
             
         </div>
         
