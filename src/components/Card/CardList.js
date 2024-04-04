@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from "styled-components";
 
-const CardList = () => {
+const StyleCardList = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+`;
+
+const CardList = (props) => {
     return (
-        <div>
-            
-        </div>
+        <StyleCardList>
+            {props.children}
+        </StyleCardList>
     );
 };
 
