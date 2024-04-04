@@ -1,22 +1,18 @@
-
+// Board.js
 import React from 'react';
 import Cell from './Cell';
 import { CalculatorWinner } from '../../helper';
+
 const Board = (props) => {
-    //Arrray(9).fill()
-    // const show = () => {
-    //     console.log(props);
-    //     CalculatorWinner();
-    // }
-    // Kiểm tra nếu props.Cell không tồn tại hoặc không phải là một mảng thì trả về null
-    if (!props.Cell || !Array.isArray(props.Cell)) {
+    // Kiểm tra nếu props.cell không tồn tại hoặc không phải là một mảng thì trả về null
+    if (!props.cell || !Array.isArray(props.cell)) {
         return null;
     }
 
     return (
         <div className='game-board'>
             {
-                props.Cell.map((item, index) => {
+                props.cell.map((item, index) => {
                     return <Cell key={index} value={item} onClick={() => props.onClick(index)}></Cell>
                 })
             }
