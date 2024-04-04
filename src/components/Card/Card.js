@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "styled-components";
+import styles, {css} from "styled-components";
 const StyleCard = styles.div`
     position: relative;
     width: 500px; /* Đặt kích thước cho card */
@@ -44,6 +44,28 @@ const CardInfo = styles.div`
 const Username = styles.div`
     font-size: 18px;
     font-weight: bold;
+    color: transparent;
+    background: linear-gradient(135deg,
+        #f6d365 0%,
+        #fda085 50%,
+        #f6d365 100%);
+    -webkit-background-clip: text; /* Thêm thuộc tính để clip màu nền chỉ cho phần văn bản */
+    background-clip: text;
+
+    ${props => props.secondary && css`
+    font-size: 18px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(
+        135deg,
+        #3a7bd5 0%,
+        #00d2ff 50%,
+        #6fff98 100%
+    );
+    -webkit-background-clip: text; /* Thêm thuộc tính để clip màu nền chỉ cho phần văn bản */
+    background-clip: text;
+    `}
+
 `;
 
 const Followers = styles.div`
@@ -66,7 +88,7 @@ const Price = styles.span`
     color: #ff4500;
 `;
 
-const Card = () => {
+const Card = (props) => {
     return (
         <StyleCard>
             <StyleCardImg>
@@ -79,7 +101,7 @@ const Card = () => {
                         <img src='https://cdn.dribbble.com/users/2400293/screenshots/15883991/media/c5a6d6098f4ec6a0ce1b38909d82a494.png?resize=1000x750&vertical=center' alt="Avatar" />
                     </CardImgAvt>
                     <CardInfo>
-                        <Username>Btngan</Username>
+                        <Username secondary>Btngan</Username>
                         <Followers>256 followers</Followers>
                     </CardInfo>
                 </AvatarContainer>
