@@ -1,11 +1,13 @@
 
 import './App.css';
-import Button from './components/Button/Button';
+import Card from  './components/Card/Card.js';
 function App() {
 
   return (
     <>
-      <Button >primary</Button>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
     </>
   )
   
