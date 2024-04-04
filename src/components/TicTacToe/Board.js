@@ -1,8 +1,12 @@
 
 import React from 'react';
 import Cell from './Cell';
+import { CalculatorWinner } from '../../helper';
 const Board = () => {
     //Arrray(9).fill()
+    const show = () => {
+        CalculatorWinner();
+    }
     return (
         <div className='game-board'>
             {
